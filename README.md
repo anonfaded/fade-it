@@ -34,7 +34,7 @@ A tool to bypass censor filters by modifying text.
      choco install python3
      ```
 
-2. **Clone the Repository**:
+## **Clone the Repository**:
 
    Open your terminal or command prompt and clone this repository:
 
