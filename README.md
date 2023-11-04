@@ -2,7 +2,7 @@
 
 A tool to bypass censor filters by modifying text.
 
-<img src="ss.png" width="50%" style="display: block; margin: 0 auto; border-radius: 15px;">
+<img src="ss.png" width="50%" style="display: block; justify-content: center; margin: 0 auto; border-radius: 15px;">
 
 
 ## Installation
