@@ -34,7 +34,7 @@ A tool to bypass censor filters by modifying text.
      choco install python3
      ```
 
-## **Clone the Repository**:
+## **Clone the Repository**
 
    Open your terminal or command prompt and clone this repository:
 
@@ -45,7 +45,7 @@ A tool to bypass censor filters by modifying text.
    - The first command will clone this repo to your system.
    - The second will change the directory to fade-it where you will run the script.
 
-## **Run the Script**:
+## **Run the Script**
 
 Execute the script with:
 
