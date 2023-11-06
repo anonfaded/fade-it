@@ -44,11 +44,12 @@ A tool to bypass censor filters by modifying text.
      Since there is an issue with the app which can't clone directly from github so we will do the steps manually. (Skip the python installation as its already installed)
 
      1. Download the ish app from appstore.
-     2. Open safari browser and open this repository from this [link](https://github.com/anonfaded/fade-it)
-     3. Download from the `download` button, and the folder will be downloaded in `My Files` of your phone.
-     4. Now open `My Files` app and navigate to `downloads` folder, you will find a folder named as `Fade-it`, copy or move this folder to ish's `root` directory. `ish > root > paste_folder_here`.
-     5. Done! Now open the ish app and use command `ls`, you will see a folder on terminal as `Fade-it`, now navigate to it by `cd Fade-it/` and do `ls` again, now thats the script which we will use.
-     6. Now run the script by command: `python3 fade-it.py`
+     2. Open safari browser and open this repository from this [link](https://github.com/anonfaded/fade-it/releases/tag/v1.0.0)
+     3. Download from the `Source code (zip)` button under Assets, and the zip folder will be downloaded in `My Files` of your phone.
+     4. Now open `My Files` app and navigate to `downloads` folder, you will find a zip folder named as `fade-it-1.0.0.zip`, long press and `uncompress` it.
+     Then copy or move this folder to ish's `root` directory. `ish > root > paste_folder_here`.
+     5. Done! Now open the ish app and use command `ls`, you will see a folder on terminal as `fade-it-1.0.0`, now navigate to it by `cd fade-it-1.0.0/` `Tip: use the tab button on keyboard to autocomplete(->)` and do `ls` again, thats the script which we will use.
+     6. Now run the script by command: `python3 fadeit.py`
 
 
 ## **Clone the Repository**
