@@ -64,7 +64,12 @@ A tool to bypass censor filters by modifying text.
 
 ## **Run the Script**
 
-Execute the script with:
+- Give the executable permission by:
+```bash
+chmod +x fadeit.py
+```
+
+- Execute the script with:
 
 ```bash
 python3 fadeit.py
