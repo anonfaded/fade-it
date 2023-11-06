@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
 import re
+
+
 # Author information
 Tool = "Fade-It"
 Author = "Faded"
 Github = "https://github.com/anonfaded/fade-it"
-Usage = "This tool prompts you to enter text or paragraphs and modifies the text to bypass censor filters on social media apps. :)"
+Usage = "Beat social media filters.\n  Enter text, we'll handle the rest. 🪄📝🔓🌟"
 Instructions = "To exit, simply press Enter without input."
 
 # Logo and header
@@ -26,7 +28,23 @@ logo = """
         "*$bd$$$$      '*$$$$$$$$$$$o+#" 
              ''''          ''''''' 
 """
-header = "============Censored Words Bypasser============"
+header_text = "Censored Words Bypasser"
+header_text = "Censored Words Bypasser"
+divider_length = 48  # Total length of the line
+
+# Calculate the number of equal signs needed on each side
+equals_count = (divider_length - len(header_text)) // 2
+
+# Construct the header text with green color
+header = f"\033[32m{header_text}\033[0m"
+
+# Construct the left and right sides of the divider with red equal signs
+left_divider = "\033[31m" + "=" * equals_count + "\033[0m"
+right_divider = "\033[31m" + "=" * equals_count + "\033[0m"
+
+# Construct the full divider line
+divider = left_divider + header + right_divider
+
 h2 = "==============================================="
 
 
@@ -69,21 +87,33 @@ def change_text(input_text):
 
 if __name__ == "__main__":
     # Print header and logo
-    print(logo)
-    print(header)
-    print(f"Tool: {Tool}\nAuthor: {Author}\nGitHub: {Github}\nUsage:\n{Usage}")
-    print(h2)
+    print("\033[31m" + logo + "\033[0m")
+    print(divider)
+    print(f"\033[31m Tool:\033[0m {Tool}\n\033[31m Author:\033[0m {Author}\n\033[31m GitHub:\033[0m {Github}\n\033[31m Usage:\033[0m\n \033[33m {Usage}\033[0m ")
+    
+# Test ANSI escape codes, we use these ansi character escapes to change the color:
+# Change the color of the text to red
+# print("\033[31mThis is red text\033[0m")    
+
+# Change the color of the text to green
+# print("\033[32mThis is green text\033[0m")
+
+    print("\033[31m" + h2 + "\033[0m")
 
  #   user_input = input("\n Enter text:\n\t")
  #   changed_result = change_text(user_input)
     
 #    print("\n Bypassed text:\n\t", changed_result)
     while True:
-        user_input = input("\n\n - Enter text (or press Enter to exit):\n >>>  ")
+        user_input = input("\033[32m\n - Enter text: \033[31m(or press Enter to exit)\033[32m\n >>>\033[0m  ")
+
         
         if user_input == "":
-            print("G00dby3!")
+            print("\033[31m\n\t<<< \033[0m \033[32mGoodbye!😢 \033[0m \033[31m>>>\n\n \033[0m")
+
+
             break  # Exit the loop if the user presses Enter without input
         
         changed_result = change_text(user_input)
-        print("\n - Bypassed text:\n >>> ", changed_result)
+        print("\033[32m\n - Bypassed text:\n >>> \033[0m", changed_result)
+        print("\n\t \033[33m ^^^Copy the modified text above^^^\033[0m")
