@@ -11,9 +11,7 @@ A tool to bypass censor filters by modifying text.
 - Windows (command prompt)
 - Ios (ish app)
 
-## Installation
-
-1. **Install Python3**:
+## Install Python3:
 
    Make sure you have Python 3 installed on your system. If it's not already installed, use the appropriate command for your platform:
 
