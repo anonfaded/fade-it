@@ -8,7 +8,7 @@ Tool = "Fade-It"
 Author = "Faded"
 Github = "https://github.com/anonfaded/fade-it"
 Usage = "Beat social media filters.\n  Enter text, we'll handle the rest. 🪄📝🔓🌟"
-Instructions = "To exit, simply press Enter without input."
+Join = "🏴 https://linktr.ee/fadedhood 🏴"
 
 # Logo and header
 logo = """
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     # Print header and logo
     print("\033[31m" + logo + "\033[0m")
     print(divider)
-    print(f"\033[31m Tool:\033[0m {Tool}\n\033[31m Author:\033[0m {Author}\n\033[31m GitHub:\033[0m {Github}\n\033[31m Usage:\033[0m\n \033[33m {Usage}\033[0m ")
+    print(f"\033[31m Tool:\033[0m {Tool}\n\033[31m Author:\033[0m {Author}\n\033[31m GitHub:\033[0m {Github}\n\033[31m Cyber Network:\033[0m {Join}\n\033[31m Usage:\033[0m\n \033[33m {Usage}\033[0m ")
     
 # Test ANSI escape codes, we use these ansi character escapes to change the color:
 # Change the color of the text to red
